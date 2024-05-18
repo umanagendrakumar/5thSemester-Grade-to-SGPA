@@ -109,17 +109,18 @@
     }
 }
 
-.sec {
-    /* border: 2px solid red; */
-}
 .section3 {
     text-align: center;
 }
 .section3 .btn {
     padding: 0.9rem 2rem;
-    border: none;
     color: floralwhite;
     background-color: darkcyan;
     border-radius: 14px;
     cursor: pointer;
+
+    
+}
+.section3 .btn:active {
+    padding: 0.87rem 1.97rem;
 }
