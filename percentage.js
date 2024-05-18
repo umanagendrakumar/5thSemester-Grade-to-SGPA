@@ -11,9 +11,8 @@ function hello() {
     const cgpa = total/5;
     const percent = ( cgpa - 0.5 )*10;
     document.querySelector('.last').classList.add('result');
-    document.querySelector('.result').innerText = percent;
+    document.querySelector('.result').innerText = percent+'%';
 }
-par
 
 
 
