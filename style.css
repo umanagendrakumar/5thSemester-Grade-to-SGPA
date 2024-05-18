@@ -124,3 +124,10 @@
 .section3 .btn:active {
     padding: 0.87rem 1.97rem;
 }
+
+.section3 .result {
+    border: 2px solid black;
+    padding: 0.9rem 2rem;
+    margin-inline-start: 1rem;
+    border-radius: 14px;
+}
