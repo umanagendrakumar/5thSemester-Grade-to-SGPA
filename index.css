@@ -7,13 +7,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 100vh;
 }
+
+
 .basic-info {
     /* border: 2px solid red; */
     max-width: 1200px;
     margin-inline: auto;
     padding: 3rem;
+   
 }
 
 .basic-info .heading {
@@ -37,12 +40,17 @@ body {
 }
 .basic-info .content-block a {
     text-decoration: none;
-    background-color: rgb(204, 204, 210); ;
+    background-color: rgb(225, 225, 230); 
     padding: 1rem 5rem;
     border-radius: 50px;
     color: black;
+    border: 5px solid black;
     font-size: 42px;
 }
+.basic-info .content-block a:hover{
+    background-color: rgb(189, 189, 193);    transition: background-color 0.5s;
+}
+
 
 @media screen and (max-width: 1034px) {
     .basic-info .heading {
