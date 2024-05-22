@@ -112,7 +112,7 @@
 }
 
     
-}
+
 @media screen and (max-width: 430px) {
     .section1 .head-content {
         font-size: 1.5rem;
@@ -172,9 +172,7 @@
     border-radius: 1rem;
     border: 2px solid black;
 }
-.greet-para{
-    /* text-align: center; */
-}
+
 
 .greet-para,
 .greet-btn,
