@@ -1,37 +1,54 @@
+
+// call calculate when ENTER hitted.
 document.body.addEventListener('keydown', (eve) => {
     if (eve.code === "Enter") {
-        hello();
+        calculate();
     }
 });
 
+
+// creating an element to store sgpa.
 const gpaSpace = document.createElement('span');
+// adding classname 
 gpaSpace.className = 'sgpa';
+
+
+// selecting div.content1.
 const secContent = document.querySelector('.content1');
+// adding sgpa element to div.content1.
 secContent.appendChild(gpaSpace);
 
 
-// const outerButton = document.createElement('button');
-// outerButton.className = "greet-btn";
-// outerButton.append('G r e e t i n g');
-
-const content2 = document.querySelector('.content2');
-// section.appendChild(outerButton);
-
-
+// creating an element to store greeting para.
 const innerButton = document.createElement('p');
+// adding classname 
 innerButton.className = "greet-para";
+
+
+//  selecting div.content2.
+const content2 = document.querySelector('.content2');
+// adding greeting para element to div.content2.
 content2.appendChild(innerButton);
 
 
-
-
-function hello() {
+// sgpa calculation processes here.
+function calculate() {
+    // comparing user entered grades with following array.
     const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f'];
+
+    // empty array to store grades entered by user.
     const arr = [];
+
+    // selecting input elements.
     const val = document.querySelectorAll('input');
+
+    // loop to retreive the value from input.
     for (let v of val) {
         arr.push((v.value).toLowerCase());
     }
+
+    // if() block is to reset all stylings.
+    // when user grades mismatched with our real array.
     if ((!(arr.every(i => real.includes(i))))) {
         alert("Enter 'Every Grade' and that to 'Proper Grades'");
         document.querySelector('.sgpa')
@@ -40,10 +57,11 @@ function hello() {
         document.querySelector('.content2')
             .style
             .display = "none";
-        // document.querySelector('.greet-btn')
-        //     .style
-        //     .display = "none";
-    } else {
+    }
+
+    // else() block is to calculate SGPA.
+    else {
+        // Below for() loop is to convert GRADE to GRADE POINTS.
         for (let i = 0; i < 10; i++) {
             let grade = arr[i];
             switch (grade) {
@@ -75,6 +93,7 @@ function hello() {
             }
         }
 
+        // Below for() loop is to calculate sum with corresponding CREDITS.
         let total = 0;
         for (let i = 0; i < 10; i++) {
             let num = arr[i];
@@ -99,100 +118,80 @@ function hello() {
                     break;
             }
         }
+
+        // SGPA is rounded to 2 DECIMAL DIGITS.
         const sgpa = (Math.round((total / 21.5) * 100)) / 100;
 
-        const sgpaButton = document.querySelector('.sgpa');
-        sgpaButton.style.display = "block";
-        sgpaButton.innerText = sgpa;
 
-        document.querySelector('.content2').style.display = "block";
+        // selecting span.sgpa
+        // changing display:none to display:block.
+        document.querySelector('.sgpa')
+            .style
+            .display = "block";
+        // setting innertext as SGPA result. 
+        document.querySelector('.sgpa')
+            .innerText = sgpa;
 
-        // const greetButton = document.querySelector('.greet-btn')
-        // greetButton.style.display = "block";
+
+        // selecting div.content2
+        // changing display:none to display:block.
+        document.querySelector('.content2')
+            .style
+            .display = "block";
+
+
+        // selecting p.greet-para
         const greetPara = document.querySelector('.greet-para')
-        greetPara.style.display = "block";
+        // changing display:none to display:block.
+        greetPara
+            .style
+            .display = "block";
 
-        // let name = prompt('Enter Your name')
-        // if (name === null || name === '') {
-        //     do {
-        //         name = prompt('You Cannot Escape from Entering "Your Name" or "Atleast One Letter"');
-        //     } while (name === null || name === '')
-        // }
-        // if (name.length > 20) {
-        //     do {
-        //         name = prompt('Max Length Allowed for Name is 20 ')
-        //     } while (name.length > 20)
-        // }
 
-        if (sgpa >= 8.5) {
-            document.querySelector('.greet-para').style.backgroundColor = "green";
-            greetPara.innerText = `You are at Top level, Nobody Can Stop You.`;
-        } else if (sgpa >= 8.0) {
-            document.querySelector('.greet-para').style.backgroundColor = "green";
-            greetPara.innerText = `You have Capability to Beat 8.5 SGPA, So Try for it.`;
-        } else if (sgpa >= 7.5) {
-            document.querySelector('.greet-para').style.backgroundColor = "yellowgreen";
-            greetPara.innerText = `You have Capability to Beat 8.0 SGPA, So try for it.`;
-        } else if (sgpa >= 7.0) {
-            document.querySelector('.greet-para').style.backgroundColor = "tomato";
-            greetPara.innerText = `You have Capability to Beat 7.5 SGPA, So try for it.`;
-        } else if (sgpa >= 6.5) {
-            document.querySelector('.greet-para').style.backgroundColor = "red";
-            greetPara.innerText = `You have Capability to Beat 7.0 SGPA, So try for it.`;
-        } else {
-            document.querySelector('.greet-para').style.backgroundColor = "red";
-            greetPara.innerText = `Sorry To say You are at Low level, Try to Cross 6.5`;
+        // Asking user to enter name.
+        let name = prompt("Enter Your Name ");
+
+        // Below if() is to check whether the name is EMPTY or NULL.
+        // and looping till name is not EMPTY or NULL.
+        if (name === '' || name === null) {
+            do {
+                name = prompt("You Can't Escape from Entering Your Name.");
+            } while (name === '' || name === null)
         }
 
-        window.scrollTo(0, 70);
+        // Below if() is to check whether the name is exceeding length 10.
+        // and Looping till name length is in range.
+        if (name.length > 10) {
+            do {
+                name = prompt("Max Length Allowed for Name is 10.");
+            } while (name.length > 10)
+        }
+
+        // Greeting users according to their result(SGPA).
+        if (sgpa >= 8.5) {
+            document.querySelector('.greet-para').style.backgroundColor = "green";
+            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. You are at Top level, Nobody Can Stop You.`;
+        } else if (sgpa >= 8.0) {
+            document.querySelector('.greet-para').style.backgroundColor = "green";
+            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 8.5 SGPA, So Try for it.`;
+        } else if (sgpa >= 7.5) {
+            document.querySelector('.greet-para').style.backgroundColor = "yellowgreen";
+            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 8.0 SGPA, So try for it.`;
+        } else if (sgpa >= 7.0) {
+            document.querySelector('.greet-para').style.backgroundColor = "tomato";
+            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 7.5 SGPA, So try for it.`;
+        } else if (sgpa >= 6.5) {
+            document.querySelector('.greet-para').style.backgroundColor = "red";
+            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 7.0 SGPA, So try for it.`;
+        } else {
+            document.querySelector('.greet-para').style.backgroundColor = "red";
+            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But Sorry To say You are at Low level, Try to Cross 6.5`;
+        }
+
+        // User need to scroll down to check if anything is there at bottom.
+        // is user scroll down manually ?
+        // This will take to bottom of the page and greeting is shown.
+        window.scrollTo(0, document.body.scrollHeight);
 
     }
 }
-
-// click to add paragraph by replacing greeting button.
-// const greetButton = document.querySelector('.greet-btn')
-// // var name;
-// greetButton.addEventListener('click', function () {
-//     let name = prompt('Enter Your name')
-//     if (name === null || name === '') {
-//         do {
-//             name = prompt('You Cannot Escape from Entering "Your Name" or "Atleast One Letter"');
-//         } while (name === null || name === '')
-//     }
-//     if (name.length > 20) {
-//         do {
-//             name = prompt('Max Length Allowed for Name is 20 ')
-//         } while (name.length > 20)
-//     }
-//     const para = document.querySelector('.greet-para')
-//     para.style.display = "block";
-
-//     const greet = document.querySelector('.greet-btn');
-//     document.querySelector('.content2').replaceChild(para, greet);
-
-
-
-//     const sgpa = document.querySelector('.sgpa').innerText;
-//     console.log(sgpa)
-//     // if (sgpa >= 8.5) {
-//     //     document.querySelector('.greet-para').style.backgroundColor = "green";
-//     //     para.innerText = `Hii ${name}, You are at Top level, Nobody Can Stop You.`;
-//     // } else if (sgpa >= 8.0) {
-//     //     document.querySelector('.greet-para').style.backgroundColor = "green";
-//     //     para.innerText = `Hii ${name}, You have Capability to Beat 8.5 SGPA, So Try for it.`;
-//     // } else if (sgpa >= 7.5) {
-//     //     document.querySelector('.greet-para').style.backgroundColor = "yellowgreen";
-//     //     para.innerText = `Hii ${name}, You have Capability to Beat 8.0 SGPA, So try for it.`;
-//     // } else if (sgpa >= 7.0) {
-//     //     document.querySelector('.greet-para').style.backgroundColor = "tomato";
-//     //     para.innerText = `Hii ${name}, You have Capability to Beat 7.5 SGPA, So try for it.`;
-//     // } else if (sgpa >= 6.5) {
-//     //     document.querySelector('.greet-para').style.backgroundColor = "red";
-//     //     para.innerText = `Hii ${name}, You have Capability to Beat 7.0 SGPA, So try for it.`;
-//     // } else {
-//     //     document.querySelector('.greet-para').style.backgroundColor = "red";
-//     //     para.innerText = `Hii ${name}, Sorry To say You are at Low level, Try to Cross 6.5`;
-//     // }
-
-// });
-
