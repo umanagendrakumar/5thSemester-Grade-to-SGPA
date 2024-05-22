@@ -184,13 +184,8 @@
     text-align: center;
 }
 
-section {
-    border: 2px solid greenyellow;
-}
-.section > * {
 
-    border: 2px solid red;
-}
+
 
 .content1 {
     display: flex;
