@@ -1,10 +1,10 @@
 
 // call calculate when ENTER hitted.
-document.body.addEventListener('keydown', (eve) => {
-    if (eve.code === "Enter") {
-        calculate();
-    }
-});
+// document.body.addEventListener('keydown', (eve) => {
+//     if (eve.code === "Enter") {
+//         calculate();
+//     }
+// });
 
 
 // creating an element to store sgpa.
@@ -34,7 +34,7 @@ content2.appendChild(innerButton);
 // sgpa calculation processes here.
 function calculate() {
     // comparing user entered grades with following array.
-    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f'];
+    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f', ''];
 
     // empty array to store grades entered by user.
     const arr = [];
@@ -191,7 +191,7 @@ function calculate() {
         // User need to scroll down to check if anything is there at bottom.
         // is user scroll down manually ?
         // This will take to bottom of the page and greeting is shown.
-        window.scrollTo(0, document.body.scrollHeight);
+        window.scrollTo(0, (document.body.scrollHeight));
 
     }
 }
