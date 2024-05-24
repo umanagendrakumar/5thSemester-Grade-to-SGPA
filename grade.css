@@ -214,6 +214,7 @@
     text-align: center;
     padding: 1rem;
 }
+
 .section4 .foot-content .contact {
     display: flex;
     justify-content: space-between;
@@ -230,7 +231,7 @@
 
 .query-portion .query-form .query-minihead {
     color: white;
-    font-size: smaller; 
+    font-size: smaller;
 }
 
 .contact .logo-link {
@@ -266,7 +267,7 @@
 }
 
 .query-form .flex .query-button {
-    padding-block: 1rem ;
+    padding-block: 1rem;
     width: 70%;
     background-color: #00B6D1;
     color: white;
@@ -286,30 +287,39 @@
     display: inline-block;
     width: 30px;
 }
+
 .footer-links span .contact-link {
     display: block;
 }
+
 .footer-links span img {
     width: 100%;
     display: block;
-    
+
 }
 
 .foot-content .copyright {
     font-size: small;
     margin-block-start: 1rem;
-    
+
 }
 
 @media screen and (max-width: 430px) {
     .contact {
-       flex-direction: column;
-       gap: 0.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
     }
+
     .foot-content .copyright {
         text-align: center;
         margin-block-start: 0.5rem;
-        
+
     }
 }
 
+@media screen and (max-width: 560px) {
+    .query-portion .query-form .query-minihead {
+        color: white;
+        font-size: smaller;
+    }
+}
