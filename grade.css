@@ -225,7 +225,12 @@
 .query-portion .query-form .query-head {
     color: #00B6D1;
     font-size: 25px;
-    margin-block-end: 1.5rem;
+    margin-block-end: 0.5rem;
+}
+
+.query-portion .query-form .query-minihead {
+    color: white;
+    font-size: smaller; 
 }
 
 .contact .logo-link {
@@ -257,6 +262,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     width: 70%;
+    margin-block-start: 1rem;
 }
 
 .query-form .flex .query-button {
