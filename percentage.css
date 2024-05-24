@@ -258,6 +258,6 @@
 @media screen and (max-width: 560px) {
     .query-portion .query-form .query-minihead {
         color: white;
-        font-size: smaller;
+        font-size: xx-small;
     }
 }
