@@ -256,10 +256,12 @@
 .query-form .flex .query-input {
     padding: 1rem;
     border-radius: 0.5rem;
+    width: 70%;
 }
 
 .query-form .flex .query-button {
-    padding: 1rem 4.9rem;
+    padding-block: 1rem ;
+    width: 70%;
     background-color: #00B6D1;
     color: white;
     font-weight: 700;

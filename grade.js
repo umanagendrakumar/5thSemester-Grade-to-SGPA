@@ -34,18 +34,20 @@ content2.appendChild(innerButton);
 // sgpa calculation processes here.
 function calculate() {
     // comparing user entered grades with following array.
-    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f', ''];
+    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f'];
 
     // empty array to store grades entered by user.
     const arr = [];
 
     // selecting input elements.
-    const val = document.querySelectorAll('input');
+    const val = document.querySelectorAll('.detail input');
+    console.log(val)
 
     // loop to retreive the value from input.
     for (let v of val) {
         arr.push((v.value).toLowerCase());
     }
+    console.log(arr);
 
     // if() block is to reset all stylings.
     // when user grades mismatched with our real array.
@@ -121,8 +123,8 @@ function calculate() {
 
         // SGPA is rounded to 2 DECIMAL DIGITS.
         const sgpa = (Math.round((total / 21.5) * 100)) / 100;
-
-
+ 
+        
         // selecting span.sgpa
         // changing display:none to display:block.
         document.querySelector('.sgpa')

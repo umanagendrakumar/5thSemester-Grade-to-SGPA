@@ -1,20 +1,20 @@
 
-alert('This Portion is in under construction.....  So Not Fully Designed');
+// alert('This Portion is in under construction.....  So Not Fully Designed');
 
-document.body.addEventListener('keydown', (e) => {
-    console.log(e);
-    if (e.code === "Enter") {
-        hello();
-    }
-});
+// document.body.addEventListener('keydown', (e) => {
+//     console.log(e);
+//     if (e.code === "Enter") {
+//         hello();
+//     }
+// });
 
 function hello() {
     const arr = [];
-    const val = document.querySelectorAll('input');
+    const val = document.querySelectorAll('.detail input');
     for (let v of val) {
         arr.push((v.value));
     }
-    if (arr.includes('')) {
+    if (arr.includes('') || arr.some(i => i > 10.0)) {
         alert('Enter Every Semester SGPA');
         let list = document.querySelector('.last').classList;
         if (list.contains('result')) {
@@ -30,7 +30,8 @@ function hello() {
             total = total + parseFloat(val);
         }
         const cgpa = total / 5;
-        const percent = (cgpa - 0.5) * 10;
+        const percent = (Math.round(((cgpa - 0.5) * 10) * 100)) / 100;
+        
         document.querySelector('.last')
             .classList
             .add('result');
