@@ -144,18 +144,19 @@
     right: 10px;
     height: 60px;
     width: 60px;
-    /* background-color: rgb(127, 241, 245);
-    border-radius: 50%; */
+    
    
 }
 .scroll-down .down-anchor {
    display: block;
+   
     /* border: 2px solid red;  */
 }
 .down-arrow-img {
     /* border: 2px solid burlywood; */
     width: 100%;
     display: block;
+    /* scroll-behavior: smooth; */
 }
 
 
