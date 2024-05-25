@@ -1,13 +1,4 @@
 
-// alert('This Portion is in under construction.....  So Not Fully Designed');
-
-// document.body.addEventListener('keydown', (e) => {
-//     console.log(e);
-//     if (e.code === "Enter") {
-//         hello();
-//     }
-// });
-
 function hello() {
     const arr = [];
     const val = document.querySelectorAll('.detail input');

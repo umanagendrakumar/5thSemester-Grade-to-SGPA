@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 .page2 {
     max-width: 1280px;
     margin-inline: auto;
@@ -13,13 +17,12 @@
     padding: 1rem;
     max-width: 980px;
     margin-inline: auto;
-    /* border: 2px solid teal; */
 }
 
 .page2 .all-data .sec {
     max-width: 800px;
     margin-inline: auto;
-    /* border: 2px solid black; */
+    background-color: white;
 }
 
 .section1 .head-content {
@@ -27,7 +30,7 @@
     font-size: 3rem;
     max-width: 650px;
     margin-inline: auto;
-    /* border: 2px solid red; */
+    padding-block-start: 1rem;
 }
 
 .section2 {
@@ -42,7 +45,6 @@
     gap: 1rem;
     max-width: 600px;
     margin-inline: auto;
-    /* border: 2px solid red; */
 }
 
 .details .detail {
@@ -59,10 +61,6 @@
 
 .details .detail .sub {
     padding: 0.5rem;
-}
-
-.details .detail .sub-detail2 {
-    min-width: 296px;
 }
 
 .details .detail .sub-detail3 input {
@@ -104,7 +102,6 @@
     .greet-para {
         font-size: larger !important;
     }
-
 }
 
 @media screen and (max-width: 430px) {
@@ -134,49 +131,33 @@
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem;
-    /* margin-block-end: 5rem; */
 }
 
 .scroll-down {
-    /* border: 2px solid black; */
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 10px;
     height: 60px;
-    width: 60px;
-    
-   
-}
-.scroll-down .down-anchor {
-   display: block;
-   
-    /* border: 2px solid red;  */
-}
-.down-arrow-img {
-    /* border: 2px solid burlywood; */
-    width: 100%;
-    display: block;
-    /* scroll-behavior: smooth; */
+    width: 60px;  
 }
 
+.scroll-down .down-anchor {
+   display: block;
+}
+
+.down-arrow-img {
+    width: 100%;
+    display: block;
+}
 
 .gpa-btn,
 .greet-para {
     padding: 1rem 2rem;
-    background-color: rgb(127, 241, 245);
+    background-color: darkcyan;
     color: white;
     border-radius: 1rem;
     border: 2px solid black;
 }
-
-/* .gpa-btn {
-    color: black;
-    cursor: pointer;
-} */
-
-/* .greet-btn:active {
-    transform: scale(0.98, 0.98);
-} */
 
 .sgpa {
     padding: 0.9rem 2rem;
@@ -204,27 +185,22 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    /* border: 2px solid red; */
 }
 
 .content2 {
-    /* border: 2px solid red; */
     display: none;
 }
 
 .section4 {
-    /* background-color: cadetblue; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-block: 1rem;
-    /* border: 2px solid red; */
 }
 
 .section4 .foot-content {
-    /* border: 2px solid black; */
     margin: 1rem;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 1rem;
     width: 100%;
 }
@@ -233,7 +209,7 @@
 .section4 .foot-content .query-portion {
     background-color: #2f2f2f;
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .section4 .foot-content .contact {
@@ -241,7 +217,6 @@
     justify-content: space-between;
     align-items: center;
     margin-block-start: 2rem;
-    /* padding-block: 1rem; */
 }
 
 .query-portion .query-form .query-head {
@@ -256,21 +231,13 @@
 }
 
 .contact .logo-link {
-    /* max-width: fit-content; */
-    /* text-align: center; */
-    /* margin-inline: auto; */
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
     background-color: black;
     color: white;
-    /* border: 2px solid darkcyan; */
     font-size: 16px;
-    /* margin-block-end: 1.5rem; */
 }
-
-
-
 
 .query-form .flex {
     display: flex;
@@ -295,14 +262,11 @@
     font-weight: 700;
     border-radius: 0.5rem;
     cursor: pointer;
-
 }
 
 .query-form .flex .query-button:active {
     transform: scale(0.98, 0.98);
 }
-
-
 
 .footer-links span {
     display: inline-block;
@@ -316,13 +280,11 @@
 .footer-links span img {
     width: 100%;
     display: block;
-
 }
 
 .foot-content .copyright {
     font-size: small;
     margin-block-start: 1rem;
-
 }
 
 @media screen and (max-width: 430px) {
@@ -334,7 +296,6 @@
     .foot-content .copyright {
         text-align: center;
         margin-block-start: 0.5rem;
-
     }
 }
 
