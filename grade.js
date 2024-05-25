@@ -193,7 +193,7 @@ function calculate() {
         // User need to scroll down to check if anything is there at bottom.
         // is user scroll down manually ?
         // This will take to bottom of the page and greeting is shown.
-        window.scrollTo(0, (document.body.scrollHeight));
+        // window.scrollTo(0, (document.body.scrollHeight));
 
     }
 }

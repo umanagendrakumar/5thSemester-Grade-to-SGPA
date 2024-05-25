@@ -15,7 +15,7 @@ function hello() {
         arr.push((v.value));
     }
     if (arr.includes('') || arr.some(i => i > 10.0)) {
-        alert('Enter Every Semester SGPA');
+        alert("Enter 'Every Semester SGPA' and that to 'Proper SGPA'.");
         let list = document.querySelector('.last').classList;
         if (list.contains('result')) {
             document.querySelector('.result')

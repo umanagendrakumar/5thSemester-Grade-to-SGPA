@@ -137,6 +137,28 @@
     /* margin-block-end: 5rem; */
 }
 
+.scroll-down {
+    /* border: 2px solid black; */
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    /* background-color: rgb(127, 241, 245);
+    border-radius: 50%; */
+   
+}
+.scroll-down .down-anchor {
+   display: block;
+    /* border: 2px solid red;  */
+}
+.down-arrow-img {
+    /* border: 2px solid burlywood; */
+    width: 100%;
+    display: block;
+}
+
+
 .gpa-btn,
 .greet-para {
     padding: 1rem 2rem;
@@ -146,14 +168,14 @@
     border: 2px solid black;
 }
 
-.gpa-btn {
+/* .gpa-btn {
     color: black;
     cursor: pointer;
-}
+} */
 
-.greet-btn:active {
+/* .greet-btn:active {
     transform: scale(0.98, 0.98);
-}
+} */
 
 .sgpa {
     padding: 0.9rem 2rem;
@@ -165,14 +187,12 @@
 }
 
 .greet-para,
-.greet-btn,
 .sgpa {
     display: none;
 }
 
 .gpa-btn,
 .sgpa,
-.greet-btn,
 .greet-para {
     min-width: min-content;
     text-align: center;
@@ -212,7 +232,7 @@
 .section4 .foot-content .query-portion {
     background-color: #2f2f2f;
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .section4 .foot-content .contact {
