@@ -40,14 +40,13 @@ function calculate() {
     const arr = [];
 
     // selecting input elements.
-    const val = document.querySelectorAll('.detail input');
-    console.log(val)
+    const val = document.querySelectorAll('.detail .sub-detail3 input');
+
 
     // loop to retreive the value from input.
     for (let v of val) {
         arr.push((v.value).toLowerCase());
     }
-    console.log(arr);
 
     // if() block is to reset all stylings.
     // when user grades mismatched with our real array.
@@ -169,25 +168,27 @@ function calculate() {
             } while (name.length > 10)
         }
 
+        name = name.toUpperCase();
+
         // Greeting users according to their result(SGPA).
         if (sgpa >= 8.5) {
             document.querySelector('.greet-para').style.backgroundColor = "green";
-            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. You are at Top level, Nobody Can Stop You.`;
+            greetPara.innerText = `Hii ${name}, Congrats. You are at Top level, Nobody Can Stop You.`;
         } else if (sgpa >= 8.0) {
             document.querySelector('.greet-para').style.backgroundColor = "green";
-            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 8.5 SGPA, So Try for it.`;
+            greetPara.innerText = `Hii ${name}, Congrats. But You have Capability to Beat 8.5 SGPA, So Try for it.`;
         } else if (sgpa >= 7.5) {
             document.querySelector('.greet-para').style.backgroundColor = "yellowgreen";
-            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 8.0 SGPA, So try for it.`;
+            greetPara.innerText = `Hii ${name}, Congrats. But You have Capability to Beat 8.0 SGPA, So try for it.`;
         } else if (sgpa >= 7.0) {
             document.querySelector('.greet-para').style.backgroundColor = "tomato";
-            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 7.5 SGPA, So try for it.`;
+            greetPara.innerText = `Hii ${name}, Congrats. But You have Capability to Beat 7.5 SGPA, So try for it.`;
         } else if (sgpa >= 6.5) {
             document.querySelector('.greet-para').style.backgroundColor = "red";
-            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But You have Capability to Beat 7.0 SGPA, So try for it.`;
+            greetPara.innerText = `Hii ${name}, Congrats. But You have Capability to Beat 7.0 SGPA, So try for it.`;
         } else {
             document.querySelector('.greet-para').style.backgroundColor = "red";
-            greetPara.innerText = `Hii ${name.toUpperCase()}, Congrats. But Sorry To say You are at Low level, Try to Cross 6.5`;
+            greetPara.innerText = `Hii ${name}, Congrats. But Sorry To say You are at Low level, Try to Cross 6.5`;
         }
 
         // User need to scroll down to check if anything is there at bottom.
