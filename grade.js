@@ -34,7 +34,7 @@ content2.appendChild(innerButton);
 // sgpa calculation processes here.
 function calculate() {
     // comparing user entered grades with following array.
-    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f', ''];
+    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f'];
 
     // empty array to store grades entered by user.
     const arr = [];

@@ -168,11 +168,11 @@ body {
     font-size: smaller; 
 }
 
-.contact .logo-link {
+.contact .logo {
     width: 70px;
     border-radius: 5px;
 }
-.contact .logo-link .logo-image {
+.contact  .logo .logo-link .logo-image {
     width: 100%;
     display: block;
     border-radius: 5px;
