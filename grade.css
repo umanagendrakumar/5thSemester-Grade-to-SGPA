@@ -237,6 +237,10 @@ body {
     width: 70px;
     border-radius: 5px;
 }
+.logo .logo-link{
+    width: 100%;
+
+}
 .contact .logo .logo-link .logo-image {
     width: 100%;
     display: block;
