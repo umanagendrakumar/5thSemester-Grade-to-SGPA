@@ -124,7 +124,11 @@ body {
 }
 
 .section3 .content1 .gpa-btn:active {
-    transform: scale(0.98, 0.98);
+    transform: scale(0.97, 0.97);
+}
+
+.section3 .content1 .gpa-btn:hover {
+    background-color: rgba(0, 139, 139, 0.8);
 }
 
 .section3 {
@@ -234,8 +238,8 @@ body {
 }
 
 .contact .logo  {
-    width: 70px;
-    border-radius: 5px;
+    max-width: 70px;
+    /* border-radius: 5px; */
 }
 .logo .logo-link{
     width: 100%;
@@ -244,7 +248,8 @@ body {
 .contact .logo .logo-link .logo-image {
     width: 100%;
     display: block;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    /* object-fit: contain; */
 }
 
 .query-form .flex {
@@ -270,6 +275,10 @@ body {
     font-weight: 700;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+.query-form .flex .query-button:hover {
+    background-color: rgba(0, 182, 209, 0.8);
 }
 
 .query-form .flex .query-button:active {

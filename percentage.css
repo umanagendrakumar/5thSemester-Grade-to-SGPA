@@ -114,13 +114,16 @@ body {
 .section3 .btn {
     padding: 0.9rem 2rem;
     color: floralwhite;
-    background-color: darkcyan;
+    background-color: rgb(0, 139, 139);
     border-radius: 14px;
     cursor: pointer;   
 }
 
+.section3 .btn:hover {
+    background-color: rgba(0, 139, 139, 0.8);
+}
 .section3 .btn:active {
-    padding: 0.87rem 1.97rem;
+    transform: scale(0.97, 0.97);
 }
 
 .section3 .result {
@@ -170,16 +173,16 @@ body {
 
 .contact .logo {
     width: 70px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .logo.logo-link {
-    display: block;
+    width: 100%;
 }
 .contact  .logo .logo-link .logo-image {
     width: 100%;
     display: block;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .query-form .flex {
@@ -200,11 +203,15 @@ body {
 .query-form .flex .query-button {
     padding-block: 1rem ;
     width: 70%;
-    background-color: #00B6D1;
+    background-color: rgb(0, 182, 209);
     color: white;
     font-weight: 700;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+.query-form .flex .query-button:hover {
+    background-color: rgba(0, 182, 209, 0.8);
 }
 
 .query-form .flex .query-button:active {
