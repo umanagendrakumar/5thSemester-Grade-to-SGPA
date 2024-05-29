@@ -171,9 +171,10 @@ body {
     font-size: smaller; 
 }
 
-.contact .logo {
+/* .contact .logo {
     width: 70px;
-    /* border-radius: 5px; */
+    border-radius: 5px;
+    background-color: #00B6D1;
 }
 
 .logo.logo-link {
@@ -182,8 +183,9 @@ body {
 .contact  .logo .logo-link .logo-image {
     width: 100%;
     display: block;
-    /* border-radius: 5px; */
-}
+    object-fit: contain;
+    border-radius: 5px;
+} */
 
 .query-form .flex {
     display: flex;
@@ -234,18 +236,18 @@ body {
 
 .foot-content .copyright {
     font-size: small;
-    margin-block-start: 1rem; 
+    /* margin-block-start: 1rem;  */
 }
 
 @media screen and (max-width: 430px) {
     .contact {
-       flex-direction: column;
+       flex-direction: column-reverse;
        gap: 0.5rem;
     }
 
     .foot-content .copyright {
         text-align: center;
-        margin-block-start: 0.5rem; 
+        /* margin-block-start: 0.5rem;  */
     }
 }
 
