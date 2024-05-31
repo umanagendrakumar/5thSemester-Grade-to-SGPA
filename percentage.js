@@ -1,11 +1,11 @@
 
-function hello() {
+function percentage(n) {
     const arr = [];
     const val = document.querySelectorAll('.detail input');
     for (let v of val) {
         arr.push((v.value));
     }
-    if (arr.includes('') || arr.some(i => i > 10.0)) {
+    if ( arr.includes('') || arr.some(i => i > 10.0)) {
         alert("Enter 'Every Semester SGPA' and that to 'Proper SGPA'.");
         let list = document.querySelector('.last').classList;
         if (list.contains('result')) {
@@ -16,18 +16,27 @@ function hello() {
                 .remove('result');
         }
     } else {
-        let total = 0;
+        let sumOfAllSGPAs = 0;
+
         for (let val of arr) {
-            total = total + parseFloat(val);
+            sumOfAllSGPAs = sumOfAllSGPAs + parseFloat(val);
         }
-        const cgpa = total / 5;
+         
+        const cgpa = sumOfAllSGPAs / 5;
+        const cgpaa = (Math.round(((sumOfAllSGPAs / 5) * 100)) / 100);
         const percent = (Math.round(((cgpa - 0.5) * 10) * 100)) / 100;
         
+
         document.querySelector('.last')
             .classList
             .add('result');
-        document.querySelector('.result')
-            .innerText = percent + '%';
+        if (n == 1) {
+            document.querySelector('.result')
+                .innerText = percent + '%';
+        } else {
+            document.querySelector('.result')
+                .innerText = cgpaa;
+        }
     }
 }
 
