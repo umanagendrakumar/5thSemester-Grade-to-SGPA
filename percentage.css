@@ -207,19 +207,17 @@ body {
 
 .foot-content .contact .logo {
     max-width: 70px;
-    border: 2px solid red;
 }
 .logo .logo-a {
     width: 100%;
     display: block;
-    border: 2px solid green;
 }
 
 .logo-a .logo-img {
     width: 100%;
     display: block;
     object-fit: contain;
-    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .footer-links span {
