@@ -109,7 +109,6 @@ body {
 .section3 {
     text-align: center;
     padding: 0.5rem;
-    border: 2px solid;
 }
 
 .btn {
@@ -140,7 +139,8 @@ body {
 }
 
 .section3 .proof {
-    border: 2px solid red;
+    border: 2px solid rgb(0, 153, 255);
+    padding: 0.1rem;
     max-width: 80%;
     margin-inline: auto;
     margin-block-start: 1rem;

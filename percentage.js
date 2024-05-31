@@ -39,7 +39,3 @@ function percentage(n) {
         }
     }
 }
-
-
-
-
