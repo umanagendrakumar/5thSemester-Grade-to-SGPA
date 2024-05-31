@@ -237,21 +237,6 @@ body {
     font-size: smaller;
 }
 
-/* .contact .logo  {
-    max-width: 70px;
-    border-radius: 5px;
-}
-.logo .logo-link{
-    width: 100%;
-
-}
-.contact .logo .logo-link .logo-image {
-    width: 100%;
-    display: block;
-    border-radius: 5px;
-    object-fit: contain;
-} */
-
 .query-form .flex {
     display: flex;
     flex-direction: column;
@@ -301,10 +286,9 @@ body {
 
 .foot-content .copyright {
     font-size: small;
-    /* margin-block-start: 1rem; */
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
     .contact {
         flex-direction: column-reverse;
         gap: 0.5rem;
@@ -312,7 +296,6 @@ body {
 
     .foot-content .copyright {
         text-align: center;
-        /* margin-block-start: 0.5rem; */
     }
 }
 
