@@ -158,6 +158,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-block-start: 2rem;
+    margin-block-end: 0.5rem;
 }
 
 .query-portion .query-form .query-head {
@@ -204,6 +205,23 @@ body {
     transform: scale(0.98, 0.98);
 }
 
+.foot-content .contact .logo {
+    max-width: 70px;
+    border: 2px solid red;
+}
+.logo .logo-a {
+    width: 100%;
+    display: block;
+    border: 2px solid green;
+}
+
+.logo-a .logo-img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    border: 2px solid black;
+}
+
 .footer-links span {
     display: inline-block;
     width: 30px;
@@ -224,7 +242,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .contact {
-       flex-direction: column-reverse;
+       flex-direction: column;
        gap: 0.5rem;
     }
 
