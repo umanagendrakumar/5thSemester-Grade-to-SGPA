@@ -3,20 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100dvh;
+    transition: 1s background-color;
 }
 
 
 .basic-info {
-    /* border: 2px solid red; */
     max-width: 1200px;
     margin-inline: auto;
     padding: 3rem;
-   
 }
 
 .basic-info .heading {
@@ -28,7 +28,6 @@ body {
 }
 
 .basic-info .content-block {
-    /* border: 2px solid red; */
     text-align: center;
     max-width: 800px;
     margin-inline: auto;
@@ -38,17 +37,20 @@ body {
     align-items: center;
     gap: 3rem;
 }
+
 .basic-info .content-block a {
     text-decoration: none;
-    background-color: rgb(225, 225, 230); 
+    background-color: rgb(225, 225, 230);
     padding: 1rem 5rem;
     border-radius: 50px;
     color: black;
     border: 5px solid black;
     font-size: 42px;
 }
-.basic-info .content-block a:hover{
-    background-color: rgb(189, 189, 193);    transition: background-color 0.5s;
+
+.basic-info .content-block a:hover {
+    background-color: rgb(189, 189, 193);
+    transition: background-color 0.5s;
 }
 
 
@@ -57,27 +59,27 @@ body {
         font-size: 2rem;
         margin-block-end: 3rem;
     }
+
     .basic-info .content-block a {
         font-size: 30px;
-    }  
+    }
+
     .basic-info .content-block {
         gap: 2rem;
     }
 }
+
 @media screen and (max-width: 721px) {
     .basic-info .heading {
         font-size: 1.5rem;
         margin-block-end: 1.2rem;
     }
+
     .basic-info .content-block a {
         font-size: 15px;
-    }  
+    }
+
     .basic-info .content-block {
         gap: 1rem;
     }
 }
-
-
-
-
-
