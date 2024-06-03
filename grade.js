@@ -26,7 +26,7 @@ content2.appendChild(innerButton);
 // sgpa calculation processes here.
 function calculate(key) {
     // comparing user entered grades with following array.
-    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f'];
+    const real = ['a+', 'a', 'b', 'c', 'd', 'e', 'f', ''];
 
     // empty array to store grades entered by user.
     const arr = [];
@@ -139,6 +139,9 @@ function calculate(key) {
         document.querySelector('.content2')
             .style
             .display = "none";
+
+        // scroll to End of the page vertically.
+        window.scrollTo(0, (document.body.scrollHeight));
 
         //It will execute when greeting button is clicked.
         if (key === "greet") {
