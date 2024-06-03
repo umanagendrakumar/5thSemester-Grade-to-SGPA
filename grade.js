@@ -50,6 +50,10 @@ function calculate(key) {
         document.querySelector('.content2')
             .style
             .display = "none";
+        document.querySelector('.content3')
+            .style
+            .display = "none";
+
     }
 
     // else() block is to calculate SGPA.
