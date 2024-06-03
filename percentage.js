@@ -7,16 +7,17 @@ function percentage(n) {
     }
 
     const funAlert = [
-        "Your BRAIN is at Your KNEES : )",
-        "Braineless Fellow : )",
-        "Consume Tablets First : )",
-        "Do You Know Donkey : )",
+        "--Your BRAIN is at Your KNEES, Please Bring It Back : )--",
+        "--Braineless Fellow, Go and Search Your Brain : )--",
+        "--Consume Tablets First, ComeOn Hurry Up : )--",
+        "--Are You a Donkey, Check Ones : )--",
     ];
     const funVal = Math.floor(Math.random() * 4);
 
     if (arr.includes('') || arr.some(i => i > 10.0)) {
         alert(`${funAlert[funVal]}
-        Enter Proper SGPAs.`);
+        and then, 
+        Enter SGPA's Properly.`);
         let list = document.querySelector('.last').classList;
         if (list.contains('result')) {
             document.querySelector('.result')

@@ -41,10 +41,10 @@ function calculate(key) {
     }
 
     const funAlert = [
-        "Your BRAIN is at Your KNEES : )",
-        "Braineless Fellow : )",
-        "Consume Tablets First : )",
-        "Do You Know Donkey : )", 
+        "--Your BRAIN is at Your KNEES, Please Bring It Back : )--",
+        "--Braineless Fellow, Go and Search Your Brain : )--",
+        "--Consume Tablets First, ComeOn Hurry Up : )--",
+        "--Are You a Donkey, Check Ones : )--",
     ];
     const funVal = Math.floor(Math.random()*4);
 
@@ -52,7 +52,8 @@ function calculate(key) {
     // when user grades mismatched with our real array.
     if ((!(arr.every(i => real.includes(i))))) {
         alert(`${funAlert[funVal]}
-        Enter Proper Grades. `);
+        and then,
+        Enter Grades Properly. `);
         document.querySelector('.sgpa')
             .style
             .display = "none";
