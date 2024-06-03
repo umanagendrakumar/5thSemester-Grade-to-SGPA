@@ -135,6 +135,11 @@ function calculate(key) {
             .style
             .display = "block";
 
+
+        document.querySelector('.content2')
+            .style
+            .display = "none";
+
         //It will execute when greeting button is clicked.
         if (key === "greet") {
 
