@@ -157,6 +157,9 @@ body {
     display: block;
 }
 
+.gpa-btn {
+    cursor: pointer;
+}
 .gpa-btn,
 .greet-para {
     padding: 1rem 2rem;
@@ -181,7 +184,6 @@ body {
     border: 2px solid black;
 }
 
-.greet-para,
 .sgpa {
     display: none;
 }
@@ -326,4 +328,21 @@ body {
         color: white;
         font-size: xx-small;
     }
+}
+
+.content3 {
+    display: none;
+}
+
+.content3 .greet-btn {
+    cursor: pointer;
+    background-color: darkmagenta;
+    padding: 1rem 3rem;
+    color: white;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.content3 .greet-btn:hover {
+    background-color: rgb(195, 97, 195);
 }
