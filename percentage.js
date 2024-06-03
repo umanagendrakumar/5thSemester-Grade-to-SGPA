@@ -7,10 +7,10 @@ function percentage(n) {
     }
 
     const funAlert = [
-        "--Your BRAIN is at Your KNEES, Please Bring It Back : )--",
-        "--Braineless Fellow, Go and Search Your Brain : )--",
-        "--Consume Tablets First, ComeOn Hurry Up : )--",
-        "--Are You a Donkey, Check Ones : )--",
+        "-- Your BRAIN is at Your KNEES, Please Bring It Back : ) --",
+        "-- Braineless Fellow, Go and Search Your Brain : ) --",
+        "-- Consume Tablets First, ComeOn Hurry Up : ) --",
+        "-- Are You a Donkey, Check Ones : ) --"
     ];
     const funVal = Math.floor(Math.random() * 4);
 
