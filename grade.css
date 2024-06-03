@@ -47,16 +47,22 @@ body {
     margin-inline: auto;
 }
 
-.details .detail {
-    border: 2px solid rgb(7, 116, 224);
+.details .detail {    
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 5px;
-    background-color: rgb(212, 248, 249);
+    border: 5px double white;
     border-radius: 25px;
-    border: none;
+}
+
+.details .detail:nth-of-type(2n+1) {
+    background-color: rgb(161, 251, 254);
+}
+
+.details .detail:nth-of-type(2n) {
+    background-color: rgb(100 226 237)
 }
 
 .details .detail .sub {
