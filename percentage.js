@@ -5,8 +5,18 @@ function percentage(n) {
     for (let v of val) {
         arr.push((v.value));
     }
-    if ( arr.includes('') || arr.some(i => i > 10.0)) {
-        alert("Enter 'Every Semester SGPA' and that to 'Proper SGPA'.");
+
+    const funAlert = [
+        "Your BRAIN is at Your KNEES : )",
+        "Braineless Fellow : )",
+        "Consume Tablets First : )",
+        "Do You Know Donkey : )",
+    ];
+    const funVal = Math.floor(Math.random() * 4);
+
+    if (arr.includes('') || arr.some(i => i > 10.0)) {
+        alert(`${funAlert[funVal]}
+        Enter Proper SGPAs.`);
         let list = document.querySelector('.last').classList;
         if (list.contains('result')) {
             document.querySelector('.result')
@@ -21,11 +31,11 @@ function percentage(n) {
         for (let val of arr) {
             sumOfAllSGPAs = sumOfAllSGPAs + parseFloat(val);
         }
-         
+
         const cgpa = sumOfAllSGPAs / 5;
         const cgpaa = (Math.round(((sumOfAllSGPAs / 5) * 100)) / 100);
         const percent = (Math.round(((cgpa - 0.5) * 10) * 100)) / 100;
-        
+
 
         document.querySelector('.last')
             .classList

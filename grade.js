@@ -40,10 +40,19 @@ function calculate(key) {
         arr.push((v.value).toLowerCase());
     }
 
+    const funAlert = [
+        "Your BRAIN is at Your KNEES : )",
+        "Braineless Fellow : )",
+        "Consume Tablets First : )",
+        "Do You Know Donkey : )", 
+    ];
+    const funVal = Math.floor(Math.random()*4);
+
     // if() block is to reset all stylings.
     // when user grades mismatched with our real array.
     if ((!(arr.every(i => real.includes(i))))) {
-        alert("Enter 'Every Grade' and that to 'Proper Grades'");
+        alert(`${funAlert[funVal]}
+        Enter Proper Grades. `);
         document.querySelector('.sgpa')
             .style
             .display = "none";
