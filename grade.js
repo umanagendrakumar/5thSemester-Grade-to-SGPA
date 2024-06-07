@@ -96,6 +96,7 @@ function calculate(key) {
                     break;
                 case 'f':
                 case 'w':
+                case 'ab':
                     arr[i] = 0;
                     break;
             }
