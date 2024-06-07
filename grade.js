@@ -46,7 +46,7 @@ function calculate(key) {
         "-- Consume Tablets First, ComeOn Hurry Up : ) --",
         "-- Are You a Donkey, Check Ones : ) --"
     ];
-    const funVal = Math.floor(Math.random()*4);
+    const funVal = Math.floor(Math.random() * 4);
 
     // if() block is to reset all stylings.
     // when user grades mismatched with our real array.
@@ -95,6 +95,7 @@ function calculate(key) {
                     arr[i] = 5;
                     break;
                 case 'f':
+                case 'w':
                     arr[i] = 0;
                     break;
             }
