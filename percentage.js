@@ -6,18 +6,12 @@ function percentage(n) {
         arr.push((v.value));
     }
 
-    const funAlert = [
-        "-- Your BRAIN is at Your KNEES, Please Bring It Back : ) --",
-        "-- Braineless Fellow, Go and Search Your Brain : ) --",
-        "-- Consume Tablets First, ComeOn Hurry Up : ) --",
-        "-- Are You a Donkey, Check Ones : ) --"
-    ];
-    const funVal = Math.floor(Math.random() * 4);
+    const funAlert = ["-- An Error While Fetching PLz reCheck Grades: ) --"];
+
+    const funVal = 0;
 
     if (arr.includes('') || arr.some(i => i > 10.0)) {
-        alert(`${funAlert[funVal]}
-        and then, 
-        Enter SGPA's Properly.`);
+        alert(`${funAlert[funVal]}`);
         let list = document.querySelector('.last').classList;
         if (list.contains('result')) {
             document.querySelector('.result')
@@ -33,9 +27,19 @@ function percentage(n) {
             sumOfAllSGPAs = sumOfAllSGPAs + parseFloat(val);
         }
 
-        const cgpa = sumOfAllSGPAs / 5;
-        const cgpaa = (Math.round(((sumOfAllSGPAs / 5) * 100)) / 100);
-        const percent = (Math.round(((cgpa - 0.5) * 10) * 100)) / 100;
+
+  
+        
+        const cgpa = sumOfAllSGPAs / arr.length;
+
+        // rounding cgpa to 2 decimal points.
+        const cgpaa = (Math.round((cgpa * 100)) / 100);
+
+        // Important Note : 
+        //     (cgpa - 0.50) x 10  is taken according to ANU Syllabus Document.
+        const percent = (Math.round(((cgpa - 0.50) * 10) * 100)) / 100;
+
+
 
 
         document.querySelector('.last')
