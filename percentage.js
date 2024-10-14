@@ -1,4 +1,6 @@
-
+alert(`Percentage is calculated acc to 
+Formula In ANU Syllabus Document.
+    Proceed to check :-)`);
 function percentage(n) {
     const arr = [];
     const val = document.querySelectorAll('.detail input');
