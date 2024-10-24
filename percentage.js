@@ -8,7 +8,7 @@ function percentage(n) {
         arr.push((v.value));
     }
 
-    const funAlert = ["-- An Error While Fetching PLz reCheck Grades: ) --"];
+    const funAlert = ["-- An Error While Fetching PLz reCheck Points: ) --"];
 
     const funVal = 0;
 
