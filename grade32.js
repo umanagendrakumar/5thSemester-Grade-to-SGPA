@@ -196,7 +196,7 @@ function calculate(key) {
                 greetPara.innerText = `Hii "${name}", Congrats.`;
             } else {
                 document.querySelector('.greet-para').style.backgroundColor = "red";
-                greetPara.innerText = `Hii "${name}", Congrats.`;
+                greetPara.innerText = `Hii "${name}", You Need Improvement.`;
             }
         }
     }
