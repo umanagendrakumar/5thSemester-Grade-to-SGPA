@@ -53,6 +53,12 @@ body {
     transition: background-color 0.5s;
 }
 
+.civil-link {
+    /* border: 2px solid; */
+    text-align: center;
+    padding: 0.5rem;
+}
+
 
 @media screen and (max-width: 1034px) {
     .basic-info .heading {
