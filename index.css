@@ -36,16 +36,19 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  
 }
 
 .basic-info .content-block a {
     text-decoration: none;
     background-color: rgb(225, 225, 230);
     padding: 1rem 5rem;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     color: black;
-    border: 5px solid black;
+    border: 2px solid black;
     font-size: 42px;
+    width: 100%;
+    
 }
 
 .basic-info .content-block a:hover {
