@@ -5,23 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE</title>
-    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .page1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .dept {
+
+            font-size: x-large;
+            font-weight: 800;
+            color: rgb(0, 0, 0);
+            margin-bottom: 2rem;
+            text-decoration: underline;
+
+        }
+
+        .basic-info {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            /* text-decoration: underline; */
+            color: rgb(67, 67, 67);
+        }
+
+        .content-block a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            text-decoration: none;
+            border: 1px dotted black;
+            color: rgb(68, 174, 219);
+            padding: 15px 20px;
+            background-color: linear-gradient;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .content-block a:hover {
+            background-color: #292929;
+            color: white;
+        }
+
+        .heading,
+        .content-block a {
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeIn 1s forwards;
+        }
+
+        .heading {
+            animation-delay: 1.4s;
+        }
+
+        .content-block a:nth-child(1) {
+            animation-delay: 1.1s;
+        }
+
+        .content-block a:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+
+        .content-block a:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+        .content-block a:nth-child(4) {
+            animation-delay: 0.2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+      
+
+        @keyframes blast-animation {
+            from {
+                transform: scale(1) translate(0, 0);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(0) translate(var(--x), var(--y));
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="page1">
         <div class="basic-info">
+            <div class="dept">Dept. of CSE 2K21 - 2K25</div>
             <div class="heading">Welcome Everyone,<br>Hope You All Doing Well.</div>
             <div class="content-block">
-                <a href="grade.html">3-1 Grades to SGPA</a>
-                <a href="grade32.html">3-2 Grades to SGPA</a>
-                <a href="percentage.html">6 Sems %</a>
+                <a href="grade.html" >3-1 Grades to SGPA</a>
+                <a href="grade32.html" >3-2 Grades to SGPA</a>
+                <a href="grade41.html" >4-1 Grades to SGPA</a>
+                <a href="percentage.html" >6 Sems %</a>
             </div>
-            <div class="civil-link"><a href="indexCE.html">Civil</a></div>
         </div>
-        
     </div>
-    
+
 </body>
 
 </html>
