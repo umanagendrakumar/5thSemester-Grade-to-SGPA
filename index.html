@@ -61,7 +61,7 @@
         }
 
         .content-block a:hover {
-            background-color: #292929;
+            background-color: #93baee;
             color: white;
         }
 
@@ -116,6 +116,23 @@
                 opacity: 0;
             }
         }
+
+        .recent {
+            position: relative;
+        }
+
+        .new {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: rgb(255, 0, 0);
+            padding: 0.2rem 0.5rem;
+            border: 1px solid rgb(255, 145, 0);
+            background-color: rgb(250, 217, 217);
+            border-radius: 50%;
+            font-size: small;
+        }
+
     </style>
 </head>
 
@@ -127,8 +144,8 @@
             <div class="content-block">
                 <a href="grade.html" >3-1 Grades to SGPA</a>
                 <a href="grade32.html" >3-2 Grades to SGPA</a>
-                <a href="grade41.html" >4-1 Grades to SGPA</a>
-                <a href="percentage.html" >6 Sems %</a>
+                <a class="recent" href="grade41.html" >4-1 Grades to SGPA <span class="new">new</span></a>
+                <a href="percentage.html" >7 Sems %</a>
             </div>
         </div>
     </div>
